@@ -1,0 +1,40 @@
+import { KnowledgeBase } from './types';
+
+export const sampleKb: KnowledgeBase = {
+  "meta": {
+    "version": "1.0",
+    "lastUpdated": "2023-10-27"
+  },
+  "faqs": [
+    {
+      "q": "What is SeeThruo?",
+      "a": "SeeThruo is a deterministic Decision Intelligence Engine designed to analyze text for intent, bias, and claims without needing external API keys.",
+      "keywords": ["what", "seethruo", "app", "tool"]
+    },
+    {
+      "q": "How does the analysis work?",
+      "a": "It uses client-side natural language processing heuristics to detect lexical patterns, sentiment, and named entities directly in your browser.",
+      "keywords": ["how", "analysis", "work", "algorithm", "logic"]
+    },
+    {
+      "q": "Is my data private?",
+      "a": "Yes. All analysis runs locally in your browser (Client-Side). No text is sent to any server unless you explicitly enable an optional external integration.",
+      "keywords": ["privacy", "data", "server", "local", "private"]
+    },
+    {
+      "q": "Who created this?",
+      "a": "Engineered by Omeir Mustafa as a prototype for transparent decision intelligence.",
+      "keywords": ["creator", "author", "omeir", "mustafa", "who"]
+    },
+    {
+      "q": "What is your email?",
+      "a": "You can reach the creator at omeirmustafa.work@gmail.com.",
+      "keywords": ["email", "contact", "reach"]
+    },
+    {
+      "q": "Can I use Gemini?",
+      "a": "This prototype includes a placeholder for Gemini integration. You would need to supply your own API key in the settings to enable advanced LLM features.",
+      "keywords": ["gemini", "llm", "ai", "key"]
+    }
+  ]
+};

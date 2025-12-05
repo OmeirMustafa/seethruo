@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SeeThruo - Decision Intelligence Engine</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Outfit:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              void: {
+                900: '#020617',
+                800: '#0F172A',
+              },
+              quantum: {
+                cyan: '#22d3ee',
+                blue: '#3b82f6',
+                purple: '#a855f7',
+              },
+              accent: {
+                pink: '#ec4899',
+              }
+            },
+            fontFamily: {
+              heading: ['Outfit', 'sans-serif'],
+              sans: ['Plus Jakarta Sans', 'sans-serif'],
+              mono: ['JetBrains Mono', 'monospace'],
+            },
+            animation: {
+              'aurora-move': 'auroraMove 25s ease-in-out infinite',
+              'glow-pulse': 'glow 3s alternate infinite',
+            },
+            keyframes: {
+              auroraMove: {
+                '0%': { transform: 'translate(0,0) scale(1)' },
+                '50%': { transform: 'translate(8%, -6%) scale(1.05)' },
+                '100%': { transform: 'translate(0,0) scale(1)' },
+              },
+              glow: {
+                '0%': { boxShadow: '0 0 8px rgba(34,211,238,0.12)' },
+                '50%': { boxShadow: '0 0 22px rgba(34,211,238,0.18)' },
+                '100%': { boxShadow: '0 0 8px rgba(34,211,238,0.12)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      :root {
+        --void-900: #020617;
+        --void-800: #0F172A;
+        --quantum-cyan: #22d3ee;
+        --quantum-blue: #3b82f6;
+        --quantum-purple: #a855f7;
+        --accent-pink: #ec4899;
+      }
+      body {
+        background-color: var(--void-900);
+        color: white;
+        overflow-x: hidden;
+      }
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: var(--void-900);
+      }
+      ::-webkit-scrollbar-thumb {
+        background: var(--void-800);
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: var(--quantum-cyan);
+      }
+      
+      /* Utilities */
+      .glass-panel {
+        background: rgba(15, 23, 42, 0.6);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+      
+      .text-glow {
+        text-shadow: 0 0 20px rgba(34, 211, 238, 0.4);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.5.1",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.25"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

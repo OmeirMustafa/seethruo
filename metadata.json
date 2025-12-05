@@ -1,0 +1,5 @@
+{
+  "name": "SeeThruo",
+  "description": "A world-class Decision Intelligence Engine prototype featuring a cinematic dark-cyber aesthetic. Provides client-side multi-lens text analysis, detecting intent, bias, and claims without external API keys.",
+  "requestFramePermissions": []
+}
